@@ -11,12 +11,12 @@ $ ./redis-cli
 # Import sample dataset into SQLite:
 $ ./sqllite3
 > .mode csv
-> .timer ON
-> .import /home/afcamar/Desktop/test_data_20180120.csv test1
+.timer ON
+.import /home/afcamar/Desktop/test_data_20180120.csv test1
 > .exit
 
 # Turn on time duration timer and output all table values:
 $ ./sqllite3
 > .timer ON
-> SELECT * FROM test1;
+ SELECT * FROM test1;
 > .exit
